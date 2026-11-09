@@ -1,0 +1,37 @@
+{
+  "dataset": {
+    "train": {
+      "images": 2900,
+      "labels": 2900
+    },
+    "val": {
+      "images": 307,
+      "labels": 307
+    },
+    "test": {
+      "images": 743,
+      "labels": 743
+    }
+  },
+  "dataset_files_identical": 7900,
+  "files_scanned": 8873,
+  "text_files_scanned": 4921,
+  "python_files_parsed": 340,
+  "image_metadata_scanned": 3950,
+  "private_path_findings": 0,
+  "absolute_dataset_paths_test": "passed",
+  "relocation_test": "passed",
+  "absolute_and_list_splits_test": "passed",
+  "missing_path_test": "passed",
+  "arbitrary_working_directory_test": "passed",
+  "network_and_loss_source_unchanged": true,
+  "checkpoint": {
+    "metadata_strings_replaced": 12,
+    "pickle_operations_preserved": 92116,
+    "tensor_storage_entries_preserved": 717,
+    "all_tensor_bytes_identical": true,
+    "all_non_metadata_entries_identical": true,
+    "clean_weight_sha256": "f251e01da4f4ed246f53fdbc9334fc24c574ac05633b584a5043479ae2b4486f"
+  },
+  "full_gpu_training_rerun": false
+}

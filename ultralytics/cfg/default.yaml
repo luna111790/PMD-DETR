@@ -1,0 +1,116 @@
+# Ultralytics YOLO 🚀, AGPL-3.0 license
+
+
+task: detect
+mode: train
+
+
+model:
+data:
+epochs: 100
+patience: 0
+batch: 4
+imgsz: 640
+save: True
+save_period: -1
+cache: False
+device:
+workers: 4
+project: runs/train
+name: exp
+exist_ok: False
+pretrained: True
+optimizer: AdamW
+verbose: True
+seed: 0
+deterministic: True
+single_cls: False
+rect: False
+cos_lr: False
+close_mosaic: 0
+resume: False
+amp: False
+fraction: 1.0
+profile: False
+freeze: None
+
+overlap_mask: True
+mask_ratio: 4
+
+dropout: 0.0
+
+
+val: True
+split: val
+save_json: False
+save_hybrid: False
+conf:
+iou: 0.7
+max_det: 300
+half: False
+dnn: False
+plots: True
+
+
+source:
+show: False
+save_txt: False
+save_conf: False
+save_crop: False
+show_labels: True
+show_conf: True
+vid_stride: 1
+stream_buffer: False
+line_width:
+visualize: False
+augment: False
+agnostic_nms: False
+classes:
+retina_masks: False
+boxes: True
+
+
+format: torchscript
+keras: False
+optimize: False
+int8: False
+dynamic: False
+simplify: False
+opset:
+workspace: 4
+nms: False
+
+
+lr0: 0.0001
+lrf: 1.0
+momentum: 0.9
+weight_decay: 0.0001
+warmup_epochs: 2000
+warmup_momentum: 0.8
+warmup_bias_lr: 0.1
+box: 7.5
+cls: 0.5
+dfl: 1.5
+pose: 12.0
+kobj: 1.0
+label_smoothing: 0.0
+nbs: 64
+hsv_h: 0.015
+hsv_s: 0.7
+hsv_v: 0.4
+degrees: 0.0
+translate: 0.1
+scale: 0.5
+shear: 0.0
+perspective: 0.0
+flipud: 0.0
+fliplr: 0.5
+mosaic: 0.0
+mixup: 0.0
+copy_paste: 0.0
+
+
+cfg:
+
+
+tracker: botsort.yaml

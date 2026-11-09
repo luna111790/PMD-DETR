@@ -1,0 +1,13 @@
+path: .
+train: train/images
+val: val/images
+test: test/images
+nc: 7
+names:
+- Angular_LS
+- Anthracnose_FR
+- Blossom_BT
+- Gray_Mold
+- Leaf_Spot
+- Powdery_Fruit
+- Powdery_Leaf
